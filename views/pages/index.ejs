@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+	<a href="/" class="page-logo js-regenerate">
+		<img src="/images/wormshill-logo.png" alt="Wormshill Artisan logo" />
+	</a>
+
+	<section>
+		<span id="randomFood"></span>
+		<a id="foodTweet"></a>
+	</section>
+	
+	<!-- Scripts separate during development -->	
+	<script src="https://platform.twitter.com/widgets.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/lodash/4.6.1/lodash.min.js"></script>
+	<script src="/scripts/app.js"></script>
+
+</body>
+</html>

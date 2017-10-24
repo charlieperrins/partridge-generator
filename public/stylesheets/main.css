@@ -1,0 +1,37 @@
+body {
+	background: url(../images/chalk-bg.jpg);
+	color: #ffffff;
+	font-family: Helvetica, Arial;
+}
+
+h1 {
+	font-size: 1em;
+}
+
+.page-logo {
+	display: block;
+}
+
+.page-logo img {
+	border: none;
+	width: 7em;
+	height: 7em;
+}
+
+section {
+	width: 80%;
+	text-align: center;	
+	margin: auto;
+}
+
+#randomFood {
+	display: block;
+	text-transform: capitalize;
+	font-size: 3.2em;
+	font-family: 'Covered By Your Grace', cursive;
+	margin: 0.5em 0;
+}
+
+#foodTweet {
+	text-align: right;
+}
