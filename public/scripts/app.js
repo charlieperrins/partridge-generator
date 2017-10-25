@@ -3,41 +3,43 @@ jQuery('document').ready(function($){
 	var appData;
 
 	var patterns = [
-//		['qualifier', 'provenance', 'method', 'food'],
-//		['provenance', 'method', 'food'],
-//		['method', 'provenance', 'food'],
-//		['qualifier', 'method', 'provenance', 'food']
-//		['activity', 'celebrity', 'condition']
-		['place', 'superlative', 'name']
+		[{'data':'place'}, {'data':'superlative'}, {'data':'name'}],
+		[{'data':'activity'},{'string':'with'},{'data':'celebrity'}],
+		[{'data':'celebrity'},{'string':'on'},{'data':'condition'}]
 	];
 
 
 	var generate = function(pattern) {
 
-		var randomFood = '';
+		var randomShow = '';
 
 		for (i=0; i<pattern.length; i++) {
 			var segment = pattern[i];
-			var item = appData[segment][_.random(0, appData[segment].length - 1)];
-			randomFood += item + ' ';
+			if (segment.data){
+				var item = appData[segment.data][_.random(0, appData[segment.data].length - 1)];
+				randomShow += item + ' ';
+			}
+			if (segment.string) {
+				randomShow += segment.string + ' ';	
+			}
 		}
 
-		randomFood = randomFood.trim();
+		randomShow = randomShow.trim();
 
 		// TODO:
 		// No double hypen
 		// No repeat words (e.g. hand)
 		// If fails filters generate new one
 
-		$('#randomFood').html(randomFood);
+		$('#randomShow').html(randomShow);
 
 		// Setup twitter button
 		// TODO: remove twttr sdk solution, update meta tags instead
 		twttr.widgets.createShareButton(
 			window.location.href,
-			document.getElementById('foodTweet'),
+			document.getElementById('showTweet'),
 			{
-				text: 'What\'s for supper tonight? We\'re having ' + randomFood,
+				text: 'What do you think Lynn? ' + randomShow,
 				via: 'shinyplums',
 				size: 'large'
 			}
@@ -55,7 +57,7 @@ jQuery('document').ready(function($){
 
 	// Attach events
 	$('.js-regenerate').on('click', function(){
-		$('#foodTweet').html(''); // Clear twitter button
+		$('#showTweet').html(''); // Clear twitter button
 		generate( patterns[_.random(0, patterns.length - 1)] );
 		return false;
 	});

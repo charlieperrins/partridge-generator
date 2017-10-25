@@ -1,6 +1,4 @@
 body {
-	background: url(../images/chalk-bg.jpg);
-	color: #ffffff;
 	font-family: Helvetica, Arial;
 }
 
@@ -24,14 +22,13 @@ section {
 	margin: auto;
 }
 
-#randomFood {
+#randomShow {
 	display: block;
 	text-transform: capitalize;
 	font-size: 3.2em;
-	font-family: 'Covered By Your Grace', cursive;
 	margin: 0.5em 0;
 }
 
-#foodTweet {
+#showTweet {
 	text-align: right;
 }
