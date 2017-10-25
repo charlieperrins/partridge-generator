@@ -1,4 +1,35 @@
 {
+	"activity": [
+		"gardening",
+		"paddleboarding",
+		"fisting"
+	],
+	"celebrity": [
+		"fearne cotton",
+		"amanda holden",
+		"michael palin"
+	],
+	"superlative": [
+		"biggest",
+		"hardest",
+		"heaviest"
+	],
+	"name": [
+		"mime",
+		"cover bands",
+		"postmen"
+	],
+	"place": [
+		"britain's",
+		"yorkshire's",
+		"liverpool's"
+	],
+	"condition": [
+		"thrush",
+		"gout",
+		"shingles"
+	],
+
 	"food": [
 		"pepper",
 		"rye bread",

@@ -3,11 +3,14 @@ jQuery('document').ready(function($){
 	var appData;
 
 	var patterns = [
-		['qualifier', 'provenance', 'method', 'food'],
-		['provenance', 'method', 'food'],
-		['method', 'provenance', 'food'],
-		['qualifier', 'method', 'provenance', 'food']
+//		['qualifier', 'provenance', 'method', 'food'],
+//		['provenance', 'method', 'food'],
+//		['method', 'provenance', 'food'],
+//		['qualifier', 'method', 'provenance', 'food']
+//		['activity', 'celebrity', 'condition']
+		['place', 'superlative', 'name']
 	];
+
 
 	var generate = function(pattern) {
 
