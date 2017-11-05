@@ -35,12 +35,13 @@ jQuery('document').ready(function($){
 
 		// Setup twitter button
 		// TODO: remove twttr sdk solution, update meta tags instead
+		// TODO: add FB button: https://developers.facebook.com/docs/plugins/share-button/#example
 		twttr.widgets.createShareButton(
 			window.location.href,
 			document.getElementById('showTweet'),
 			{
 				text: 'What do you think Lynn? ' + randomShow,
-				via: 'shinyplums',
+				via: 'RandomPartridge',
 				size: 'large'
 			}
 		);
