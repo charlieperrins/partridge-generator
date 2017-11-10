@@ -40,7 +40,7 @@ jQuery('document').ready(function($){
 			window.location.href,
 			document.getElementById('showTweet'),
 			{
-				text: 'What do you think Lynn? ' + randomShow,
+				text: 'Lynn, idea for a programme: ' + randomShow,
 				via: 'RandomPartridge',
 				size: 'large'
 			}
